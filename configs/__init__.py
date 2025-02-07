@@ -11,18 +11,20 @@ from .konzil import KonzilConfig
 from .patzig import PatzigConfig
 from .ricordi import RicordiConfig
 from .schiller import SchillerConfig
+from .reports import ReportsConfig
 
 CONFIGS = {
-    'bentham': BenthamConfig,
-    'peter': PeterConfig,
-    'iam': IAMConfig,
-    'iam_tbluche': TblucheIAMConfig,
-    'hkr': HKRConfig,
-    'saintgall': SaintGallConfig,
-    'washington': WashingtonConfig,
-    'schwerin': SchwerinConfig,
-    'konzil': KonzilConfig,
-    'patzig': PatzigConfig,
-    'ricordi': RicordiConfig,
-    'schiller': SchillerConfig,
+    "bentham": BenthamConfig,
+    "peter": PeterConfig,
+    "iam": IAMConfig,
+    "iam_tbluche": TblucheIAMConfig,
+    "hkr": HKRConfig,
+    "saintgall": SaintGallConfig,
+    "washington": WashingtonConfig,
+    "schwerin": SchwerinConfig,
+    "konzil": KonzilConfig,
+    "patzig": PatzigConfig,
+    "ricordi": RicordiConfig,
+    "schiller": SchillerConfig,
+    "reports": ReportsConfig,
 }
