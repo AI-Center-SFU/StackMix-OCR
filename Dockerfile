@@ -8,7 +8,7 @@ RUN apt-get update && \
     pip install --upgrade pip
 
 # Устанавливаем Python-зависимости
-RUN pip install \
+RUN pip install --no-cache-dir \
     jupyter==1.0.0 \
     pandas==1.2.2 \
     nltk==3.5 \
@@ -21,7 +21,8 @@ RUN pip install \
     neptune-client==0.5.1 \
     psutil==5.8.0 \
     tqdm==4.56.2 \
-    gdown==3.12.2
+    gdown==3.12.2 \
+    torch==1.6.0+cu101 torchvision==0.7.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
 
 # Создаём рабочую директорию и копируем в неё весь репозиторий
 WORKDIR /workspace
